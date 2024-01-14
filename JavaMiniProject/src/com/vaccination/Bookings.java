@@ -15,6 +15,7 @@ public class Bookings {
 	public void seeCities() throws ClassNotFoundException, SQLException {
 		Connection con = ConnectionFormDb.connection1();
 		String sql="SELECT * FROM city";
+		System.out.println("2");
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(sql);
 		System.out.println("----------------------------------------------------------------------------------------------------------------");
